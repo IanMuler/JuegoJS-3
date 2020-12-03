@@ -1,0 +1,44 @@
+1-npm init
+2-npm i @babel/core babel-loader html-webpack-plugin webpack webpack-cli@3.3.11 webpack-dev-server --save-dev
+3-webpack.config.js 
+4-crear src/pages, routes, styles, utils
+5-src/index.js con el codigo que se generará en dist/main.js
+6-public/index.html con el template que se generará en dist/index.html 
+7-scripts build,start en package.json
+
+"build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+
+    si da error
+
+"build": "npm install webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+
+
+8-npm run build
+9-src/templates .js fijos (Header, Navbar, etc)
+10-src/pages para componentes (Targets, Error404, etc)
+
+11-src/routes/index.js para -importar los templates y pages 
+                            -crear objeto con routes
+                            -crear un router async donde se reciben los elementos de html por id y 
+                            se coloca el componente dentro con .innetHTML
+                            -exportarlo
+                            
+12-src/index.js para -importar y llamar a router cuando se cargue la página
+
+13-utils/getHash.js, resolveRoutes.js e importarlos en routes/index.js
+ 
+ explicacion de función dentro de getHash:
+
+-location.hash: trae el fragmento de la url a partir de donde encuentre un #. En este caso traería #/1/
+-.slice(1): corta la url y muestra a partir del primer elemento. En este Caso el resultado es /1/
+-.toLocaleLowerCase(): convierte a minúscula la cadena
+-.split(’/’): separa la cadena en un array, y elimina el / quedando un espacio vacio Ej [’’, ‘1’ ,’’]
+-[1]: trae el primer elemento del split anterior que en este caso es 1 (representa la id 1)
+
+14-Armar lógica del paso anterior en routes/index.js
+
+15-Agregar Addevententlistener en src/index.js de cambio de hash
+
+16-utils/getData para crear funcion que extraiga los datos de una API
