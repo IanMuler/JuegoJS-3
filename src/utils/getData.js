@@ -1,4 +1,4 @@
-const API = 'http://hp-api.herokuapp.com/api/characters/';
+const API = 'https://hp-api.herokuapp.com/api/characters/';
 
 const getData = async () => {
   try {

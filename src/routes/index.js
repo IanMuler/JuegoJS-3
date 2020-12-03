@@ -12,7 +12,19 @@ const routes = {
   '/select-character/0': SelectCharacter,
   '/select-character/1': SelectCharacter,
   '/select-character/2': SelectCharacter,
-  '/tower': Tower,
+  '/tower/0': Tower,
+  '/tower/1': Tower,
+  '/tower/2': Tower,
+  '/tower/3': Tower,
+  '/tower/4': Tower,
+  '/tower/5': Tower,
+  '/tower/6': Tower,
+  '/tower/7': Tower,
+  '/tower/8': Tower,
+  '/tower/9': Tower,
+  '/tower/10': Tower,
+  '/tower/11': Tower,
+  '/tower/12': Tower,
 };
 
 const router = async () => {
@@ -24,7 +36,7 @@ const router = async () => {
   
   let hash = getHash();
   let render = routes[hash] ? routes[hash] : Error404;
-  content.innerHTML = await render();  
+  content.innerHTML = await render();
 
 };
 

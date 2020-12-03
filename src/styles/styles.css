@@ -32,76 +32,6 @@ body {
   justify-content: center;
 }
 
-.Characters {
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
-  grid-row-gap: 1.5em;
-  display: grid;
-}
-
-.Characters-inner {
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 1.5rem;
-  grid-row-gap: 1.5em;
-  display: grid;
-}
-
-.Characters-card {
-  text-decoration: none;
-  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
-  border-radius: 5px;
-  margin: 0 0 20px 0;
-  display: block;
-  animation-duration: 2s;
-  animation-name: fade;
-}
-
-.Characters-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px 5px 0 0;
-}
-
-.Characters-card h2 {
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.Characters-card h3 {
-  font-size: 18px;
-  font-weight: 400;
-  text-align: left;
-  margin: 20px;
-}
-
-.Characters-item {
-  text-decoration: none;
-  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
-  border-radius: 5px;
-  margin: 0 0 20px 0;
-  display: block;
-  animation-duration: 2s;
-  animation-name: fade;
-}
-
-.Characters-item img {
-  width: 200px;
-  height: auto;
-  border-radius: 5px 5px 0 0;
-}
-.Characters-item h2 {
-  font-size: 18px;
-  font-weight: 300;
-  padding: 5px 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.Characters-item a {
-  text-decoration: none;
-  color: #026C86;
-}
 /*-----------------------Intro---------------------*/
 @keyframes scale {
   from {
@@ -129,31 +59,20 @@ body {
   }
 }
 
-
-.Main-loading {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 .intro-wallpaper{
   background: url(https://i.ibb.co/7yDM2w6/Intro-wallpaper.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 780.8px;
+  height: 453px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-name: fade;
+  position: relative;
 }
 
 .intro-wallpaper a{
@@ -182,8 +101,8 @@ body {
   background-position: center;
   background-size: cover;
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 780.8px;
+  height: 453px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -250,3 +169,257 @@ body {
   height: 150px;
 }
 /*----------------------------------------------------*/
+
+/*----------------------Tower-------------------------*/
+.intro-wallpaper .tower{
+  animation-name: fade0;
+  animation-duration: 1s;
+  
+}
+
+/* 13 levels tower */
+.intro-wallpaper .tower .towerimg {
+  width: 600px;
+  object-position: 0px -800px;
+  animation-duration: 2s;
+  animation-name: fade;
+  animation-delay: 1s; 
+}
+
+.intro-wallpaper .tower .towerimg1 {
+  width: 600px;
+  object-position: 0px -647px;
+  
+  animation-name: fade, traslatedown1;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s; 
+}
+
+.intro-wallpaper .tower .towerimg2 {
+  width: 600px;
+  object-position: 0px -492px;
+  animation-name: fade, traslatedown2;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s;
+}
+
+.intro-wallpaper .tower .towerimg3 {
+  width: 600px;
+  object-position: 0px -338px;
+  animation-name: fade, traslatedown3;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s; 
+}
+
+.intro-wallpaper .tower .towerimg4 {
+  width: 600px;
+  object-position: 0px -185px;
+  animation-name: fade, traslatedown4;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s;
+}
+
+.intro-wallpaper .tower .towerimg5 {
+  width: 600px;
+  object-position: 0px -29px;
+  animation-name: fade, traslatedown5;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s;
+}
+
+.intro-wallpaper .tower .towerimg6 {
+  width: 600px;
+  object-position: 0px 120px;
+  animation-name: fade, traslatedown6;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s;
+}
+
+.intro-wallpaper .tower .towerimg7 {
+  width: 600px;
+  object-position: 0px 274px;
+  animation-name: fade, traslatedown7;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s;
+}
+
+.intro-wallpaper .tower .towerimg8 {
+  width: 600px;
+  object-position: 0px 427px;
+  animation-name: fade, traslatedown8;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s;
+}
+
+.intro-wallpaper .tower .towerimg9 {
+  width: 600px;
+  object-position: 0px 583px;
+  animation-name: fade, traslatedown9;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s;
+}
+
+.intro-wallpaper .tower .towerimg10 {
+  width: 600px;
+  object-position: 0px 736px;
+  animation-name: fade, traslatedown10;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s; 
+}
+
+.intro-wallpaper .tower .towerimg11 {
+  width: 600px;
+  object-position: 0px 892px;
+  animation-name: fade, traslatedown11;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s; 
+}
+
+.intro-wallpaper .tower .towerimg12 {
+  width: 600px;
+  object-position: 0px 1046px;
+  animation-name: fade, traslatedown12;
+  animation-duration: 2s, 3s;
+  animation-delay: 1s, 0s;
+}
+
+
+/*----*/
+
+.intro-wallpaper .tower .towerpj{
+  position: absolute;
+  bottom: 115px;
+  left: 270px;
+  width:85px;
+  height: 100px;
+  animation-name: fade0, fade;
+  animation-duration: 1s, 2s;
+  animation-delay: 0s, 1s;
+}
+
+.intro-wallpaper .tower .traslateright{
+  animation-name: fade0, fade, traslaterightpj;
+  animation-duration: 1s, 2s, 2s;
+  animation-delay: 0s, 1s, 1s;
+}
+
+@keyframes traslaterightpj {
+  from {
+    left: 150px;
+  }
+  to {
+    left: 270px;
+  }
+}
+
+/*---traslate down group ----------*/
+
+@keyframes traslatedown1 {
+  from {
+    object-position: 0px -800px;
+  }
+  to {
+    object-position: 0px -647px;
+  }
+}
+
+@keyframes traslatedown2 {
+  from {
+    object-position: 0px -647px;
+  }
+  to {
+    object-position: 0px -492px;
+  }
+}
+
+@keyframes traslatedown3 {
+  from {
+    object-position: 0px -492px;
+  }
+  to {
+    object-position: 0px -338px;
+  }
+}
+
+@keyframes traslatedown4 {
+  from {
+    object-position: 0px -338px;
+  }
+  to {
+    object-position: 0px -185px;
+  }
+}
+
+@keyframes traslatedown5 {
+  from {
+    object-position: 0px -185px;
+  }
+  to {
+    object-position: 0px -29px;
+  }
+}
+
+@keyframes traslatedown6 {
+  from {
+    object-position: 0px -29px;
+  }
+  to {
+    object-position: 0px 120px;
+  }
+}
+
+@keyframes traslatedown7 {
+  from {
+    object-position: 0px 118px;
+  }
+  to {
+    object-position: 0px 274px;
+  }
+}
+
+@keyframes traslatedown8 {
+  from {
+    object-position: 0px 271px;
+  }
+  to {
+    object-position: 0px 427px;
+  }
+}
+
+@keyframes traslatedown9 {
+  from {
+    object-position: 0px 427px;
+  }
+  to {
+    object-position: 0px 583px;
+  }
+}
+
+@keyframes traslatedown10 {
+  from {
+    object-position: 0px 583px;
+  }
+  to {
+    object-position: 0px 736px;
+  }
+}
+
+@keyframes traslatedown11 {
+  from {
+    object-position: 0px 736px;
+  }
+  to {
+    object-position: 0px 892px;
+  }
+}
+
+@keyframes traslatedown12 {
+  from {
+    object-position: 0px 892px;
+  }
+  to {
+    object-position: 0px 1046px;
+  }
+}
+
+/*------traslate down grupo end -------- */

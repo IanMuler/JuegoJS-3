@@ -24,7 +24,7 @@ const view = `
             <img class="characterimg" src="${charactersDetails.front[id]}" alt="">
             <a href="#/select-character/${next}"><img class="arrow-right" src="https://i.ibb.co/kQX8xkW/Flechas-Right.png" alt=""></a>  
             </div>
-            <a href="#/tower">
+            <a href="#/tower/0">
             <button class="btn-select">Select</button>
             </a>
         </div>
