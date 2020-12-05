@@ -43,28 +43,48 @@ const Intro = async () => {
                 "https://i.ibb.co/k4ZHWvs/Harry1.png",
                 "https://i.ibb.co/k4ZHWvs/Harry1.png",
                 "https://i.ibb.co/k4ZHWvs/Harry1.png",
+                "https://i.ibb.co/k4ZHWvs/Harry1.png",
+                "https://i.ibb.co/k4ZHWvs/Harry1.png",
+                "https://i.ibb.co/k4ZHWvs/Harry1.png",
+                "https://i.ibb.co/k4ZHWvs/Harry1.png",
+                "https://i.ibb.co/6yBpCLk/Harry5.png",
+                "https://i.ibb.co/6yBpCLk/Harry5.png",
                 "https://i.ibb.co/6yBpCLk/Harry5.png",
                 "https://i.ibb.co/6yBpCLk/Harry5.png",
                 "https://i.ibb.co/NZkC8Fy/Harry7-2.png"
-            ]
+            ],
             [
                 "https://i.ibb.co/TBFBqH0/Hermione1-2.png",
                 "https://i.ibb.co/TBFBqH0/Hermione1-2.png",
+                "https://i.ibb.co/TBFBqH0/Hermione1-2.png",
+                "https://i.ibb.co/TBFBqH0/Hermione1-2.png",
+                "https://i.ibb.co/G04SbfN/Hermione3.png",
                 "https://i.ibb.co/G04SbfN/Hermione3.png",
                 "https://i.ibb.co/TBFBqH0/Hermione1-2.png",
+                "https://i.ibb.co/TBFBqH0/Hermione1-2.png",
+                "https://i.ibb.co/t226yS2/Hermione1.png", //hermione 5
                 "https://i.ibb.co/t226yS2/Hermione1.png", //hermione 5
                 "https://i.ibb.co/TThDYZn/Hermione4.png",
+                "https://i.ibb.co/TThDYZn/Hermione4.png",
+                "https://i.ibb.co/TThDYZn/Hermione4.png",
                 "https://i.ibb.co/TThDYZn/Hermione4.png"
+            ],
+            [
+                "https://i.ibb.co/DDMVHPF/Ron1.png",
+                "https://i.ibb.co/DDMVHPF/Ron1.png",
+                "https://i.ibb.co/Mht67jq/Ron2.png",
+                "https://i.ibb.co/Mht67jq/Ron2.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png",
+                "https://i.ibb.co/NZxj74h/Ron4.png"
             ]
-            // [
-            //     "https://i.ibb.co/DDMVHPF/Ron1.png",
-            //     "https://i.ibb.co/Mht67jq/Ron2.png",
-            //     "https://i.ibb.co/NZxj74h/Ron4.png",
-            //     "https://i.ibb.co/NZxj74h/Ron4.png",
-            //     "https://i.ibb.co/NZxj74h/Ron4.png",
-            //     "https://i.ibb.co/NZxj74h/Ron4.png",
-            //     "https://i.ibb.co/NZxj74h/Ron4.png"
-            // ]
         ],
         "villains": [
             "https://i.ibb.co/3NwLqJk/Troll.png",
@@ -73,7 +93,7 @@ const Intro = async () => {
             "https://i.ibb.co/nrvMdS8/Tom-Riddle.png",
             "https://i.ibb.co/Jx6YKTd/Petegrew.png",
             "https://i.ibb.co/F8QBVLm/Dementor.png",
-            "https://i.ibb.co/ZfYWVrg/Dragon1.png",            
+            "https://i.ibb.co/ZfYWVrg/Dragon1.png",
             "https://i.ibb.co/svjwfkF/Voldemort.png",
             "https://i.ibb.co/JCcLLK8/Umbridge.png",
             "https://i.ibb.co/b2C2tby/Lucius.png",
@@ -83,7 +103,72 @@ const Intro = async () => {
         ]
     }
 
+    const fightClasses = {
+        "heroes": [
+            [
+                "Harry0",
+                "Harry1",
+                "Harry2",
+                "Harry3",
+                "Harry4",
+                "Harry5",
+                "Harry6",
+                "Harry7",
+                "Harry8",
+                "Harry9",
+                "Harry10",
+                "Harry11",
+                "Harry12"
+            ],
+            [
+                "Hermione0",
+                "Hermione1",
+                "Hermione2",
+                "Hermione3",
+                "Hermione4",
+                "Hermione5",
+                "Hermione6",
+                "Hermione7",
+                "Hermione8",
+                "Hermione9",
+                "Hermione10",
+                "Hermione11",
+                "Hermione12"
+            ],
+            [
+                "Ron0",
+                "Ron1",
+                "Ron2",
+                "Ron3",
+                "Ron4",
+                "Ron5",
+                "Ron6",
+                "Ron7",
+                "Ron8",
+                "Ron9",
+                "Ron10",
+                "Ron11",
+                "Ron12"
+            ]
+        ],
+        "villains": [
+            "Troll",
+            "Quirrell",
+            "Basilisco",
+            "Tom",
+            "Pettigrew",
+            "Dementor",
+            "Dragon",
+            "Voldemort1",
+            "Umbridge",
+            "Lucius",
+            "Bellatrix",
+            "Draco",
+            "Voldemort2"
+        ]
+    }
     localStorage.setItem("charactersDetails", JSON.stringify(charactersDetails));
+    localStorage.setItem("fightClasses", JSON.stringify(fightClasses));
 
     const view = `
     <div class="intro-wallpaper">
