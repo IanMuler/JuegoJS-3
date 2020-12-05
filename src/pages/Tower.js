@@ -3,7 +3,7 @@ import getData from '../utils/getData';
 const Tower =  async () => {
     const id = parseInt(localStorage.getItem("id"));
     let lvl = parseInt(location.hash.slice(2).toLocaleLowerCase().split('/')[1]);
-    localStorage.setItem("lvl",lvl) 
+    localStorage.setItem("lvl",lvl); 
     const characters = await getData();
     const character = characters[id];
     const view = `

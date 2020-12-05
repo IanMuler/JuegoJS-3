@@ -1,10 +1,11 @@
 const changeTower = () => {
-   /* if (location.hash.slice(2).includes("tower")) {
+    if (location.hash.slice(2).includes("tower")) {
+       const lvl = localStorage.getItem("lvl") 
         setTimeout(() => {
-            location.hash = "/"
+            location.hash = `/fight/${lvl}`
         }, 5000);
     }
-*/
+    
     if (location.hash.slice(2) === "tower/1") {
         setTimeout(() => {
             const pictureImg = document.getElementById('tower-picture-img');

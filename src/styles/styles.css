@@ -423,3 +423,48 @@ body {
 }
 
 /*------traslate down grupo end -------- */
+
+/*---------------fight--------------------*/
+
+.fight-wallpaper{
+  display: flex;
+  width: 780.8px;
+  height: 453px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  animation-duration: 1s;
+  animation-name: fade;
+  position: relative;
+}
+
+.fight-wallpaper:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(58, 58, 58, 0.7);
+}
+
+.fightplace{
+  width: 100%;
+  height: auto;
+  position: relative; 
+}
+
+.fightplace .floorimg{
+  width: 100%;
+}
+
+.fightplace .heroe{
+  position: absolute;
+  left: 20px;
+}
+
+.fightplace .villain{
+ position: relative;
+ right: 20px;
+}
