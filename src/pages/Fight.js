@@ -12,6 +12,16 @@ const Fight =  async () => {
     background-size: cover;
     ">
         <div class="fightplace"> 
+        <!--
+            <div class="centro1"></div>
+            <div class="centro2"></div>
+            <div class="alto1"></div>
+            <div class="base1"></div>
+        -->   
+            <div id="ppt" class="ppt">
+            <div class="ppt-left"></div>
+            <div class="ppt-right"></div>
+            </div>
             <img class="floorimg" src="${charactersDetails.floor[lvl]}" alt="">
             <img id="${fightClasses.heroes[id][lvl]}" src="${charactersDetails.heroes[id][lvl]}" alt="">
             <img id="${fightClasses.villains[lvl]}" src="${charactersDetails.villains[lvl]}" alt="">    

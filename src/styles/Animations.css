@@ -1,0 +1,163 @@
+/*------------- animations ----------*/
+
+@keyframes scale {
+    from {
+      transform: scale(0.1);
+    }
+  
+    to {
+      transform: scale(1);
+    }
+  }
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade0 {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  
+  @keyframes traslaterightpj {
+    from {
+      left: 150px;
+    }
+  
+    to {
+      left: 270px;
+    }
+  }
+  
+  @keyframes traslatedown1 {
+    from {
+      object-position: 0px -800px;
+    }
+  
+    to {
+      object-position: 0px -647px;
+    }
+  }
+  
+  @keyframes traslatedown2 {
+    from {
+      object-position: 0px -647px;
+    }
+  
+    to {
+      object-position: 0px -492px;
+    }
+  }
+  
+  @keyframes traslatedown3 {
+    from {
+      object-position: 0px -492px;
+    }
+  
+    to {
+      object-position: 0px -338px;
+    }
+  }
+  
+  @keyframes traslatedown4 {
+    from {
+      object-position: 0px -338px;
+    }
+  
+    to {
+      object-position: 0px -185px;
+    }
+  }
+  
+  @keyframes traslatedown5 {
+    from {
+      object-position: 0px -185px;
+    }
+  
+    to {
+      object-position: 0px -29px;
+    }
+  }
+  
+  @keyframes traslatedown6 {
+    from {
+      object-position: 0px -29px;
+    }
+  
+    to {
+      object-position: 0px 120px;
+    }
+  }
+  
+  @keyframes traslatedown7 {
+    from {
+      object-position: 0px 118px;
+    }
+  
+    to {
+      object-position: 0px 274px;
+    }
+  }
+  
+  @keyframes traslatedown8 {
+    from {
+      object-position: 0px 271px;
+    }
+  
+    to {
+      object-position: 0px 427px;
+    }
+  }
+  
+  @keyframes traslatedown9 {
+    from {
+      object-position: 0px 427px;
+    }
+  
+    to {
+      object-position: 0px 583px;
+    }
+  }
+  
+  @keyframes traslatedown10 {
+    from {
+      object-position: 0px 583px;
+    }
+  
+    to {
+      object-position: 0px 736px;
+    }
+  }
+  
+  @keyframes traslatedown11 {
+    from {
+      object-position: 0px 736px;
+    }
+  
+    to {
+      object-position: 0px 892px;
+    }
+  }
+  
+  @keyframes traslatedown12 {
+    from {
+      object-position: 0px 892px;
+    }
+  
+    to {
+      object-position: 0px 1046px;
+    }
+  }
+

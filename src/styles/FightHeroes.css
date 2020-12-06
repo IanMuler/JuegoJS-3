@@ -1,0 +1,187 @@
+/*------------fight heroes-----------------*/
+
+#Harry0,
+#Harry1,
+#Harry2,
+#Harry3,
+#Harry6 {
+  position: absolute;
+  left: 50px;
+  bottom: calc(20px);
+  width: 150px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Harry6 {
+  position: absolute;
+  left: 65px;
+  bottom: calc(37px);
+  width: 110px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Harry7 {
+  position: absolute;
+  left: 25px;
+  bottom: calc(30px);
+  width: 190px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Harry8,
+#Harry9,
+#Harry10 {
+  position: absolute;
+  left: 70px;
+  bottom: calc(29px);
+  width: 135px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Harry4,
+#Harry5 {
+  position: absolute;
+  left: 60px;
+  bottom: calc(26px);
+  width: 120px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Harry11 {
+  position: absolute;
+  left: 55px;
+  bottom: calc(30px);
+  width: 120px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Harry12 {
+  position: absolute;
+  left: 75px;
+  bottom: calc(36px);
+  width: 135px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Hermione0,
+#Hermione1,
+#Hermione2,
+#Hermione3 {
+  position: absolute;
+  left: 68px;
+  bottom: calc(30px);
+  width: 110px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Hermione4,
+#Hermione5 {
+  position: absolute;
+  left: 25px;
+  bottom: calc(33px);
+  width: 165px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Hermione6 {
+  position: absolute;
+  left: 95px;
+  bottom: calc(42px);
+  width: 57px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Hermione7 {
+  position: absolute;
+  left: 75px;
+  bottom: calc(39px);
+  width: 97px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Hermione8,
+#Hermione9,
+#Hermione10 {
+  position: absolute;
+  left: 65px;
+  bottom: calc(37px);
+  width: 137px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Hermione11 {
+  position: absolute;
+  left: 65px;
+  bottom: calc(29px);
+  width: 112px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Hermione12 {
+  position: absolute;
+  left: 73px;
+  bottom: calc(37px);
+  width: 140px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Ron0,
+#Ron1 {
+  position: absolute;
+  left: 63px;
+  bottom: calc(37px);
+  width: 135px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Ron2,
+#Ron3 {
+  position: absolute;
+  left: 66px;
+  bottom: calc(37px);
+  width: 128px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Ron4,
+#Ron5,
+#Ron7,
+#Ron8,
+#Ron9,
+#Ron10,
+#Ron11,
+#Ron12 {
+  position: absolute;
+  left: 30px;
+  bottom: calc(32px);
+  width: 167px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+#Ron6 {
+  position: absolute;
+  left: 65px;
+  bottom: calc(36px);
+  width: 100px;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+

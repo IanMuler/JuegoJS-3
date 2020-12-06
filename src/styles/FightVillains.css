@@ -1,0 +1,131 @@
+/*----------fight villains----------------*/
+#Troll {
+    position: absolute;
+    right: -15px;
+    bottom: calc(20px);
+    width: 300px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Quirrell {
+    position: absolute;
+    right: 38px;
+    bottom: calc(12px);
+    width: 150px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Basilisco {
+    position: absolute;
+    right: -35px;
+    bottom: calc(8px);
+    width: 370px;
+    height: 400px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Tom {
+    position: absolute;
+    right: 52px;
+    bottom: calc(35px);
+    width: 140px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Pettigrew {
+    position: absolute;
+    right: 42px;
+    bottom: calc(42px);
+    width: 170px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Dementor {
+    position: absolute;
+    right: 20px;
+    bottom: calc(20px);
+    width: 180px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Dragon {
+    position: absolute;
+    right: -100px;
+    bottom: calc(-35px);
+    width: 500px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Voldemort1 {
+    position: absolute;
+    right: 45px;
+    bottom: calc(39px);
+    width: 180px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Umbridge {
+    position: absolute;
+    right: 62px;
+    bottom: calc(40px);
+    width: 120px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Lucius {
+    position: absolute;
+    right: -5px;
+    bottom: calc(39px);
+    width: 220px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Bellatrix {
+    position: absolute;
+    right: 48px;
+    bottom: calc(29px);
+    width: 150px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Draco {
+    position: absolute;
+    right: 0px;
+    bottom: calc(7px);
+    width: 230px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }
+  
+  #Voldemort2 {
+    position: absolute;
+    right: 56px;
+    bottom: calc(37px);
+    width: 190px;
+    animation-name: fade0, bounceInDown;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 1s;
+  }

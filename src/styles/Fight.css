@@ -1,0 +1,78 @@
+/*---------------fight--------------------*/
+
+.fight-wallpaper {
+    display: flex;
+    width: 780.8px;
+    height: 453px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    animation-duration: 1s;
+    animation-name: fade;
+    position: relative;
+  }
+  
+  .fight-wallpaper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(58, 58, 58, 0.7);
+  }
+  
+  .fightplace {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .fightplace .floorimg {
+    width: 100%;
+    height: 70px;
+  }
+  
+  .centro1 {
+    position: absolute;
+    width: 0px;
+    height: 300px;
+    border: 1px solid red;
+    left: 117px;
+    bottom: 0px;
+    z-index: 1;
+  }
+  
+  .centro2 {
+    position: absolute;
+    width: 0px;
+    height: 300px;
+    border: 1px solid red;
+    right: 117px;
+    bottom: 0px;
+    z-index: 1;
+  }
+  
+  .alto1 {
+    position: absolute;
+    width: 1000px;
+    height: 0px;
+    border: 1px solid red;
+    left: 0px;
+    bottom: 150px;
+    z-index: 1;
+  }
+  
+  .base1 {
+    position: absolute;
+    width: 1000px;
+    height: 0px;
+    border: 1px solid red;
+    left: 0px;
+    bottom: 42px;
+    z-index: 1;
+  }
+  
+  
+  
