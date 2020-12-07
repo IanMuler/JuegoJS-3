@@ -1,4 +1,4 @@
-/*---------------fight--------------------*/
+/*---------------fight place--------------------*/
 
 .fight-wallpaper {
     display: flex;
@@ -27,6 +27,8 @@
     width: 100%;
     height: auto;
     position: relative;
+    display: flex;
+    flex-direction: column-reverse;
   }
   
   .fightplace .floorimg {
@@ -39,7 +41,7 @@
     width: 0px;
     height: 300px;
     border: 1px solid red;
-    left: 117px;
+    left: 220px;
     bottom: 0px;
     z-index: 1;
   }
@@ -49,7 +51,7 @@
     width: 0px;
     height: 300px;
     border: 1px solid red;
-    right: 117px;
+    right: 220px;
     bottom: 0px;
     z-index: 1;
   }
@@ -74,5 +76,76 @@
     z-index: 1;
   }
   
+  /*----------------heroes movements-----------*/
+
+  #attack1png{
+    position: absolute;
+    bottom: 190px;
+    left: 190px;
+    width: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
   
   
+  
+  #attack1png img{
+    width: 400px;
+    height: 50px;
+  }
+
+  #attack1png.animation, #attack2png.animation{
+    animation-name: width-attackpng, finalwidth-attackpng, fadeout;
+    animation-duration: 0.5s, 2s, 2s;
+    animation-delay: 0s, 0.5s, 0.5s;
+    animation-timing-function: linear; 
+  }  
+
+  #defense1png{
+    position: absolute;
+    bottom: 140px;
+    left: 167px;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  #defense1png img{
+    height: 150px;
+  }
+
+  #attack2png{
+    position: absolute;
+    bottom: 190px;
+    right: 190px;
+    width: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #attack2png img{
+    width: 400px;
+    height: 50px;
+  }
+
+  #defense2png{
+    position: absolute;
+    bottom: 140px;
+    right: 167px;
+    z-index: 1;
+    opacity: 0;
+    
+  }
+
+  #defense2png img{
+    height: 150px;
+  }
+
+  #defense1png.animation, #defense2png.animation {
+    animation-name: bounceInDown, fade, fadeout;
+    animation-duration: 1s, 1s, 2s;
+    animation-delay: 0s, 0s, 1s;
+  }  
+
+

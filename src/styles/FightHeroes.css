@@ -7,7 +7,7 @@
 #Harry6 {
   position: absolute;
   left: 50px;
-  bottom: calc(20px);
+  bottom: calc(20px - 5px + 100px );
   width: 150px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -16,7 +16,7 @@
 #Harry6 {
   position: absolute;
   left: 65px;
-  bottom: calc(37px);
+  bottom: calc(37px - 5px + 100px );
   width: 110px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -25,7 +25,7 @@
 #Harry7 {
   position: absolute;
   left: 25px;
-  bottom: calc(30px);
+  bottom: calc(30px - 5px + 100px );
   width: 190px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -36,7 +36,7 @@
 #Harry10 {
   position: absolute;
   left: 70px;
-  bottom: calc(29px);
+  bottom: calc(29px - 5px + 100px );
   width: 135px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -46,7 +46,7 @@
 #Harry5 {
   position: absolute;
   left: 60px;
-  bottom: calc(26px);
+  bottom: calc(26px - 5px + 100px );
   width: 120px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -55,7 +55,7 @@
 #Harry11 {
   position: absolute;
   left: 55px;
-  bottom: calc(30px);
+  bottom: calc(30px - 5px + 100px );
   width: 120px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -64,7 +64,7 @@
 #Harry12 {
   position: absolute;
   left: 75px;
-  bottom: calc(36px);
+  bottom: calc(36px - 5px + 100px );
   width: 135px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -76,7 +76,7 @@
 #Hermione3 {
   position: absolute;
   left: 68px;
-  bottom: calc(30px);
+  bottom: calc(30px - 5px + 100px );
   width: 110px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -86,7 +86,7 @@
 #Hermione5 {
   position: absolute;
   left: 25px;
-  bottom: calc(33px);
+  bottom: calc(33px - 5px + 100px );
   width: 165px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -95,7 +95,7 @@
 #Hermione6 {
   position: absolute;
   left: 95px;
-  bottom: calc(42px);
+  bottom: calc(42px - 5px + 100px );
   width: 57px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -104,7 +104,7 @@
 #Hermione7 {
   position: absolute;
   left: 75px;
-  bottom: calc(39px);
+  bottom: calc(39px - 5px + 100px );
   width: 97px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -115,7 +115,7 @@
 #Hermione10 {
   position: absolute;
   left: 65px;
-  bottom: calc(37px);
+  bottom: calc(37px - 5px + 100px );
   width: 137px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -124,7 +124,7 @@
 #Hermione11 {
   position: absolute;
   left: 65px;
-  bottom: calc(29px);
+  bottom: calc(29px - 5px + 100px );
   width: 112px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -133,7 +133,7 @@
 #Hermione12 {
   position: absolute;
   left: 73px;
-  bottom: calc(37px);
+  bottom: calc(37px - 5px + 100px );
   width: 140px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -143,7 +143,7 @@
 #Ron1 {
   position: absolute;
   left: 63px;
-  bottom: calc(37px);
+  bottom: calc(37px - 5px + 100px );
   width: 135px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -153,7 +153,7 @@
 #Ron3 {
   position: absolute;
   left: 66px;
-  bottom: calc(37px);
+  bottom: calc(37px - 5px + 100px );
   width: 128px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -169,7 +169,7 @@
 #Ron12 {
   position: absolute;
   left: 30px;
-  bottom: calc(32px);
+  bottom: calc(32px - 5px + 100px );
   width: 167px;
   animation-name: bounceInDown;
   animation-duration: 2s;
@@ -178,7 +178,7 @@
 #Ron6 {
   position: absolute;
   left: 65px;
-  bottom: calc(36px);
+  bottom: calc(36px - 5px + 100px );
   width: 100px;
   animation-name: bounceInDown;
   animation-duration: 2s;

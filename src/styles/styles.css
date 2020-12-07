@@ -16,6 +16,7 @@ body {
   color: #3c484e;
   font-family: 'Open Sans', sans-serif;
   user-select: none;
+  box-sizing: border-box;
 }
 
 #content {
@@ -40,4 +41,8 @@ body {
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+}
+
+.d-none{
+  display: none;
 }

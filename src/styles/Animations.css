@@ -161,3 +161,95 @@
     }
   }
 
+  @keyframes traslate-attack1{
+    from {
+      left: -106px;
+    }
+  
+    to {
+      left: -173px;
+    }
+  }
+
+  @keyframes traslate-defense1{
+    from {
+      left: -36px;
+    }
+  
+    to {
+      left: -173px;
+    }
+  }
+
+  @keyframes traslate-cure1{
+    from {
+      left: 34px;
+    }
+  
+    to {
+      left: -173px;
+    }
+  }
+  
+  @keyframes traslate-attack2{
+    from {
+      right: 34px;
+    }
+  
+    to {
+      right: -173px;
+    }
+  }
+  
+  @keyframes traslate-defense2{
+      from {
+          right: -36px;
+    }
+  
+    to {
+        right: -173px;
+    }
+}
+
+@keyframes traslate-cure2{
+  from {
+    right: -106px;
+  }
+
+  to {
+    right: -173px;
+  }
+}
+
+@keyframes width-attackpng {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes finalwidth-attackpng {
+  from {
+    width: 400px;
+  }
+
+  to {
+    width: 400px;
+  }
+}
+
+ 
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
