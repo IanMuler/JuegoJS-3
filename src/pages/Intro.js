@@ -100,7 +100,38 @@ const Intro = async () => {
             "https://i.ibb.co/L9g7mRb/Bellatrix.png",
             "https://i.ibb.co/xD5tJLb/Draco.png",
             "https://i.ibb.co/TBX5kG8/Voldemort2.png",
+        ],
+        "attack2png": [
+            "https://i.ibb.co/Srdpn5v/Claws212.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png",
+            "https://i.ibb.co/Srdpn5v/Claws212.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png",
+            "https://i.ibb.co/Srdpn5v/Claws212.png",
+            "https://i.ibb.co/Srdpn5v/Claws212.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png",
+            "https://i.ibb.co/KKSvGpH/Rayoverde.png"   
+        ],
+        "defense2png": [
+            "https://i.ibb.co/KXnrBVk/baston.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/vdfyhv7/escudosnake-removebg-preview.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/vdfyhv7/escudosnake-removebg-preview.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
+            "https://i.ibb.co/b3y8dd7/Shield-Villain.png"   
         ]
+
     }
 
     const fightClasses = {

@@ -8,23 +8,7 @@
     align-items: center;
 }
 
-#ppt .stats-left {
-    width: 200px;
-    height: 80px;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    border: 1px solid red;
-}
 
-#ppt .stats-right {
-    width: 200px;
-    height: 80px;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    border: 1px solid red;
-}
 
 #ppt .ppt-left {
     position: absolute;
@@ -36,8 +20,8 @@
 #ppt .ppt-right {
     position: relative;
     animation-name: fade0, fade;
-    animation-duration:1s, 1s;
-    animation-delay:0s, 1s;
+    animation-duration: 1s, 1s;
+    animation-delay: 0s, 1s;
 }
 
 
@@ -60,18 +44,18 @@
     height: auto;
 }
 
-#attack1{
+#attack1 {
     position: absolute !important;
     bottom: -34px;
-    left: -106px;   
+    left: -106px;
     /* animation-name: fade0, fade;
     animation-duration:2s, 1s;
     animation-delay:0s, 2s; */
 }
 
 
-#defense1{
-    position: absolute !important;   
+#defense1 {
+    position: absolute !important;
     bottom: -34px;
     left: -36px;
     /* animation-name: fade0, fade;
@@ -79,8 +63,8 @@
     animation-delay:0s, 2s; */
 }
 
-#cure1{
-    position: absolute !important;   
+#cure1 {
+    position: absolute !important;
     bottom: -34px;
     left: 34px;
     /* animation-name: fade0, fade;
@@ -90,26 +74,26 @@
 
 
 
-#attack2{
+#attack2 {
     position: absolute !important;
     bottom: -34px;
-    right: 34px;   
+    right: 34px;
 }
 
-#defense2{
-    position: absolute !important;   
+#defense2 {
+    position: absolute !important;
     bottom: -34px;
     right: -36px;
 }
 
-#cure2{
-    position: absolute !important;   
+#cure2 {
+    position: absolute !important;
     bottom: -34px;
     right: -106px;
-  
+
 }
 
-#attack1.selected{
+#attack1.selected {
     border: 3px solid rgb(95, 210, 255);
     margin: 0 !important;
     left: -173px;
@@ -117,7 +101,7 @@
     animation-duration: 1s;
 }
 
-#defense1.selected{
+#defense1.selected {
     border: 3px solid rgb(95, 210, 255);
     margin: 0 !important;
     left: -173px;
@@ -125,7 +109,7 @@
     animation-duration: 1s;
 }
 
-#cure1.selected{
+#cure1.selected {
     border: 3px solid rgb(95, 210, 255);
     margin: 0 !important;
     left: -173px;
@@ -133,7 +117,7 @@
     animation-duration: 1s;
 }
 
-#attack2.selected2{
+#attack2.selected2 {
     border: 3px solid rgb(255, 164, 141);
     right: -173px;
     animation: traslate-attack2;
@@ -141,7 +125,7 @@
     margin: 0 !important;
 }
 
-#defense2.selected2{
+#defense2.selected2 {
     border: 3px solid rgb(255, 164, 141);
     right: -173px;
     animation: traslate-defense2;
@@ -149,7 +133,7 @@
     margin: 0 !important;
 }
 
-#cure2.selected2{
+#cure2.selected2 {
     border: 3px solid rgb(255, 164, 141);
     right: -173px;
     animation: traslate-cure2;
@@ -157,17 +141,136 @@
     margin: 0 !important;
 }
 
-.selectedRed{
+.selectedRed {
     border: 3px solid rgb(255, 164, 141);
 }
 
-.unselected{
+.unselected {
     display: none !important;
 }
 
-.initialppt{
-  animation-name: fade0, fadeInDownBig !important;
-  animation-duration:2s, 1s;
-  animation-delay:0s, 2s;
+.initialppt {
+    animation-name: fade0, fadeInDownBig !important;
+    animation-duration: 2s, 1s;
+    animation-delay: 0s, 2s;
+}
+
+.secondAnimation {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+/*------------------stats------------------------*/
+#ppt .stats-left {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#ppt .stats-right {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#ppt .stats-right .hp,
+#ppt .stats-left .hp {
+    width: 100%;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+#ppt .stats-right img,
+#ppt .stats-left img {
+    width: 10px;
+    margin-right: 5px;
+}
+
+
+
+#ppt .stats-left .hpbar,
+#ppt .stats-right .hpbar {
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#ppt .stats-left .atk,
+#ppt .stats-right .atk,
+#ppt .stats-left .def,
+#ppt .stats-right .def,
+#ppt .stats-left .cur,
+#ppt .stats-right .cur {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+#ppt .stats-left .atkbar,
+#ppt .stats-right .atkbar,
+#ppt .stats-left .defbar,
+#ppt .stats-right .defbar,
+#ppt .stats-left .curbar,
+#ppt .stats-right .curbar{
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+#ppt .stats-right .atkbar,
+#ppt .stats-right .defbar,
+#ppt .stats-right .curbar,
+#ppt .stats-right .hpbar {
+display: flex;
+flex-direction: row-reverse;
+}
+
+
+#ppt .stats-left .hpbar .hpvalue,
+#ppt .stats-right .hpbar .hpvalue {
+    height: 100%;
+    background-color: red;
+    transition: width 2s;
+}
+
+.atkbar div,
+.defbar div,
+.curbar div{
+    width: 25%;
+    background-color: rgba(128, 128, 128, 0.699);
+    border: 2px solid rgb(0, 0, 0);
+    transition: opacity 2s;
 }
 

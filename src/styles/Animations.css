@@ -241,6 +241,26 @@
   }
 }
 
+@keyframes height-attackpng {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 125.33px;
+  }
+}
+
+@keyframes finalheight-attackpng {
+  from {
+    height: 125.33px;
+  }
+
+  to {
+    height: 125.33px;
+  }
+}
+
  
 @keyframes fadeout {
   from {
@@ -252,4 +272,22 @@
   }
 }
 
+@keyframes spin1 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-110deg); }
+}
 
+@keyframes spin2 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(110deg); }
+}
+
+@keyframes traslateup{
+  from {
+    bottom: 70px;
+  }
+
+  to {
+    bottom: 100px;
+  }
+}
