@@ -1,4 +1,4 @@
-const Intro = async () => {
+const Intro = () => {
     localStorage.setItem("id", 0);
 
     const charactersDetails = {
@@ -130,6 +130,21 @@ const Intro = async () => {
             "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
             "https://i.ibb.co/b3y8dd7/Shield-Villain.png",
             "https://i.ibb.co/b3y8dd7/Shield-Villain.png"   
+        ],
+        "cure2png": [
+            "https://i.ibb.co/ZH8VJXy/steak.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/ZH8VJXy/steak.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/ZH8VJXy/steak.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png",
+            "https://i.ibb.co/SrYGSVW/curevillain.png"   
         ]
 
     }

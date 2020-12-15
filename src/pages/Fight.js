@@ -1,4 +1,4 @@
-const Fight = async () => {
+const Fight = () => {
 const id = parseInt(localStorage.getItem("id"));
 let lvl = parseInt(location.hash.slice(2).toLocaleLowerCase().split('/')[1]);
 localStorage.setItem("lvl", lvl)
@@ -28,8 +28,8 @@ const view = `
         <div id="cure1png">
             <img src="https://i.ibb.co/5M2smsV/curehero.png" alt="cure1png">
         </div>
-        <div id="cure2png">
-            <img src="https://i.ibb.co/SrYGSVW/curevillain.png" alt="cure2png">
+        <div id="cure2png" class="cur-${fightClasses.villains[lvl]}">
+            <img src="${charactersDetails.cure2png[lvl]}" alt="cure2png">
         </div>
 
         <!--  animated damage/cure value -->
@@ -56,8 +56,6 @@ const view = `
                     <div class="atkbar">
                         <div id="atkleft1" class="atkleft1"></div>
                         <div id="atkleft2" class="atkleft2"></div>
-                        <div id="atkleft3" class="atkleft3"></div>
-                        <div id="atkleft4" class="atkleft4"></div>
                     </div>
                 </div>
                 <div class="def">
@@ -65,8 +63,6 @@ const view = `
                     <div class="defbar">
                         <div id="defleft1" class="defleft1"></div>
                         <div id="defleft2" class="defleft2"></div>
-                        <div id="defleft3" class="defleft3"></div>
-                        <div id="defleft4" class="defleft4"></div>
                     </div>
                 </div>
                 <div class="cur">
@@ -74,8 +70,6 @@ const view = `
                     <div class="curbar">
                         <div id="curleft1" class="curleft1"></div>
                         <div id="curleft2" class="curleft2"></div>
-                        <div id="curleft3" class="curleft3"></div>
-                        <div id="curleft4" class="curleft4"></div>
                     </div>
                 </div>
 
@@ -94,8 +88,6 @@ const view = `
                     <div class="atkbar">
                         <div id="atkright1" class="atkright1"></div>
                         <div id="atkright2" class="atkright2"></div>
-                        <div id="atkright3" class="atkright3"></div>
-                        <div id="atkright4" class="atkright4"></div>
                     </div>
                 </div>
                 <div class="def">
@@ -103,8 +95,6 @@ const view = `
                     <div class="defbar">
                         <div id="defright1" class="defright1"></div>
                         <div id="defright2" class="defright2"></div>
-                        <div id="defright3" class="defright3"></div>
-                        <div id="defright4" class="defright4"></div>
                     </div>
                 </div>
                 <div class="cur">
@@ -112,8 +102,6 @@ const view = `
                     <div class="curbar">
                         <div id="curright1" class="curright1"></div>
                         <div id="curright2" class="curright2"></div>
-                        <div id="curright3" class="curright3"></div>
-                        <div id="curright4" class="curright4"></div>
                     </div>
                 </div>
             </div>
@@ -152,6 +140,9 @@ const view = `
 
     <picture id="you-win" class="d-none">
         <img src="https://i.ibb.co/d4d5pPB/you-Win-2.png" alt="">
+    </picture>
+    <picture id="restart" class="d-none">
+        <img src="https://i.ibb.co/4dYd74M/reset-button.png" alt="">
     </picture>
 
 </div>

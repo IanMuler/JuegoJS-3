@@ -5,6 +5,7 @@ import SelectCharacter from '../pages/SelectCharacter';
 import Tower from '../pages/Tower';
 import Fight from '../pages/Fight';
 import Error404 from '../pages/Error404';
+import End from '../pages/End';
 
 
 
@@ -39,6 +40,7 @@ const routes = {
   '/fight/10': Fight,
   '/fight/11': Fight,
   '/fight/12': Fight,
+  '/end': End
 };
 
 const router = async () => {

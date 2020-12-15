@@ -33,35 +33,25 @@ const fightApp = () => {
 
         const atkleft1 = document.getElementById("atkleft1");
         const atkleft2 = document.getElementById("atkleft2");
-        const atkleft3 = document.getElementById("atkleft3");
-        const atkleft4 = document.getElementById("atkleft4");
 
         const defleft1 = document.getElementById("defleft1");
         const defleft2 = document.getElementById("defleft2");
-        const defleft3 = document.getElementById("defleft3");
-        const defleft4 = document.getElementById("defleft4");
 
         const curleft1 = document.getElementById("curleft1");
         const curleft2 = document.getElementById("curleft2");
-        const curleft3 = document.getElementById("curleft3");
-        const curleft4 = document.getElementById("curleft4");
 
         const atkright1 = document.getElementById("atkright1");
         const atkright2 = document.getElementById("atkright2");
-        const atkright3 = document.getElementById("atkright3");
-        const atkright4 = document.getElementById("atkright4");
 
         const defright1 = document.getElementById("defright1");
         const defright2 = document.getElementById("defright2");
-        const defright3 = document.getElementById("defright3");
-        const defright4 = document.getElementById("defright4");
 
         const curright1 = document.getElementById("curright1");
         const curright2 = document.getElementById("curright2");
-        const curright3 = document.getElementById("curright3");
-        const curright4 = document.getElementById("curright4");
 
         const youWin = document.getElementById("you-win");
+        const restart = document.getElementById("restart");
+        restart.addEventListener("click", restartLvl);
 
         const intervalo = 100; //animacion ppt cpu
         let valorcpu; // opción elegida cpu
@@ -69,18 +59,18 @@ const fightApp = () => {
 
         //stats iniciales
         let hp1 = 100;
-        let atk1 = 4;
-        let def1 = 4;
-        let cur1 = 4;
+        let atk1 = 2;
+        let def1 = 2;
+        let cur1 = 2;
 
         let hp2 = 100;
-        let atk2 = 4;
-        let def2 = 4;
-        let cur2 = 4;
+        let atk2 = 2;
+        let def2 = 2;
+        let cur2 = 2;
 
-        const ATK = 25;
-        const DEF = 25;
-        const CUR = 15;
+        const ATK = 50;
+        const DEF = 50;
+        const CUR = 30;
 
         hero.classList.add("initialAnimation1");
         villain.classList.add("initialAnimation2");
@@ -194,7 +184,6 @@ const fightApp = () => {
         //Opciones random CPU
         function random() {
             valorcpu = Math.floor(Math.random() * (4 - 1)) + 1;
-            valorcpu = 1;
             if (valorcpu == 1) {
                 selectAttack2();
                 defense2.classList.add("unselected");
@@ -243,7 +232,7 @@ const fightApp = () => {
                     break;
                 case 2:
                     defense1png.classList.add("animation");
-                    if(valorcpu === 1 && def1 < atk2){
+                    if(valorcpu === 1 && atk2 > def1-1){
                         damage1.classList.add("animation");
                     }
                     break;
@@ -263,7 +252,7 @@ const fightApp = () => {
                     break;
                 case 2:
                     defense2png.classList.add("animation");
-                    if(selected === 1 && def2 < atk1){
+                    if(selected === 1 && atk1 > def2-1){
                         damage2.classList.add("animation");
                     }
                     break;
@@ -285,17 +274,17 @@ const fightApp = () => {
             switch (selected) {
                 case 1: //attack
 
-                    if (def1 < 4) {
+                    if (def1 < 2) {
                         def1++
                     };
-                    if (cur1 < 4) {
+                    if (cur1 < 2) {
                         cur1++
                     };
 
                     if (valorcpu === 1) {
-                        hp2 = hp2 - (ATK * (atk1 / 4));
+                        hp2 = hp2 - (ATK * (atk1 / 2));
 
-                        damage2.innerHTML = `-${Math.round((ATK * (atk1 / 4)))}`;
+                        damage2.innerHTML = `-${Math.round((ATK * (atk1 / 2)))}`;
                         if (hp2 < 0){
                             hp2 = 0;
                         }
@@ -304,7 +293,7 @@ const fightApp = () => {
                         }, 1500);
                     }
 
-                    if (valorcpu === 3 && atk1 != 4) {
+                    if (valorcpu === 3 && atk1 != 2) {
                         atk1++;
                     }
 
@@ -314,19 +303,20 @@ const fightApp = () => {
                     break;
                 case 2: //defense
 
-                    if (atk1 < 4) {
+                    if (atk1 < 2) {
                         atk1++
                     };
-                    if (cur1 < 4) {
+                    if (cur1 < 2) {
                         cur1++
                     };
 
-                    if (valorcpu === 1 && def1 < atk2) {
-                        hp1 = hp1 + ((DEF * (def1 / 4)) - (ATK * (atk2 / 4)));
-                        damage1.innerHTML = `${((DEF * (def1 / 4)) - (ATK * (atk1 / 4)))}`;
+                    if (valorcpu === 1 && atk2 > def1-1) {
+                        var hpprev = hp1;
+                        hp1 = hp1 + ((DEF * (def1 / 2)) - ((ATK * (atk2 / 2)) * ((0.7) + (0.3*((lvl)/8)))));
+                        damage1.innerHTML = `-${hpprev-hp1}`;
                     }
 
-                    if (valorcpu === 1 && def1 != 4) {
+                    if (valorcpu === 1 && def1 != 2) {
                         def1++;
                     }
 
@@ -345,23 +335,23 @@ const fightApp = () => {
 
                 case 3: //cure
 
-                    if (atk1 < 4) {
+                    if (atk1 < 2) {
                         atk1++
                     };
-                    if (def1 < 4) {
+                    if (def1 < 2) {
                         def1++
                     };
 
                     if (valorcpu === 1) {
-                        hp1 = hp1 + ((CUR * (cur1 / 4)) - (ATK * (atk2 / 4)));
-                        damage1.innerHTML = `-${Math.round((ATK * (atk2 / 4)))}`;
+                        hp1 = hp1 + ((CUR * (cur1 / 2)) - (ATK * (atk2 / 2)));
+                        damage1.innerHTML = `-${Math.round((ATK * (atk2 / 2)))}`;
                     } else {
-                        hp1 = hp1 + ((CUR * (cur1 / 4)))
+                        hp1 = hp1 + ((CUR * (cur1 / 2)))
                     }
 
-                    cureplus1.innerHTML = `+${(CUR * (cur1 / 4))}`;
+                    cureplus1.innerHTML = `+${(CUR * (cur1 / 2))}`;
 
-                    if (valorcpu === 2 && cur1 != 4) {
+                    if (valorcpu === 2 && cur1 != 2) {
                         cur1++;
                     }
 
@@ -386,18 +376,18 @@ const fightApp = () => {
             switch (valorcpu) {
                 case 1: //attack
 
-                    if (def2 < 4) {
+                    if (def2 < 2) {
                         def2++
                     };
 
-                    if (cur2 < 4) {
+                    if (cur2 < 2) {
                         cur2++
                     };
 
                     if (selected === 1) {
-                        hp1 = hp1 - (ATK * (atk2 / 4));
+                        hp1 = hp1 - ((ATK * (atk2 / 2)) * ((0.7) + (0.3*((lvl)/10))));
 
-                        damage1.innerHTML = `-${Math.round((ATK * (atk2 / 4)))}`;
+                        damage1.innerHTML = `-${Math.round(((ATK * (atk2 / 2)) * ((0.7) + (0.3*((lvl)/10)))))}`;
 
                         if (hp1 < 0){
                             hp1 = 0;
@@ -407,7 +397,7 @@ const fightApp = () => {
                         }, 1500);
                     }
 
-                    if (selected === 3 && atk2 != 4) {
+                    if (selected === 3 && atk2 != 2) {
                         atk2++;
                     }
 
@@ -419,19 +409,19 @@ const fightApp = () => {
 
                 case 2: //defense
 
-                    if (atk2 < 4) {
+                    if (atk2 < 2) {
                         atk2++
                     };
-                    if (cur2 < 4) {
+                    if (cur2 < 2) {
                         cur2++
                     };
 
-                    if (selected === 1 && def2 < atk1) {
-                        hp2 = hp2 + ((DEF * (def2 / 4)) - (ATK * (atk1 / 4)))
-                        damage2.innerHTML = `-${((DEF * (def2 / 4)) - (ATK * (atk1 / 4)))}`;
+                    if (selected === 1 && atk1 > def2-1) {
+                        hp2 = hp2 + ((DEF * (def2 / 2)) - (ATK * (atk1 / 2)))
+                        damage2.innerHTML = `-${((DEF * (def2 / 2)) - (ATK * (atk1 / 2)))}`;
                     }
 
-                    if (selected === 1 && def2 != 4) {
+                    if (selected === 1 && def2 != 2) {
                         def2++;
                     }
 
@@ -450,23 +440,23 @@ const fightApp = () => {
 
                 case 3: //cure
 
-                    if (atk2 < 4) {
+                    if (atk2 < 2) {
                         atk2++
                     };
-                    if (def2 < 4) {
+                    if (def2 < 2) {
                         def2++
                     };
 
                     if (selected === 1) {
-                        hp2 = hp2 + ((CUR * (cur2 / 4)) - (ATK * (atk1 / 4)));
-                        damage2.innerHTML = `-${Math.round((ATK * (atk1 / 4)))}`;
+                        hp2 = hp2 + ((CUR * (cur2 / 2)) - (ATK * (atk1 / 2)));
+                        damage2.innerHTML = `-${Math.round((ATK * (atk1 / 2)))}`;
                     } else {
-                        hp2 = hp2 + ((CUR * (cur2 / 4)))
+                        hp2 = hp2 + ((CUR * (cur2 / 2)))
                     };
 
-                    cureplus2.innerHTML = `+${Math.round((CUR * (cur2 / 4)))}`;
+                    cureplus2.innerHTML = `+${Math.round((CUR * (cur2 / 2)))}`;
 
-                    if (selected === 2 && cur2 != 4) {
+                    if (selected === 2 && cur2 != 2) {
                         cur2++;
                     }
 
@@ -490,18 +480,10 @@ const fightApp = () => {
             }
 
             switch (atk1) {
-                case 4:
-                    atkleft4.setAttribute("style", `opacity: 1`);
-                    break;
-                case 3:
-                    atkleft2.setAttribute("style", `opacity: 1`);
-                    atkleft3.setAttribute("style", `opacity: 1`);
-                    atkleft4.setAttribute("style", `opacity: 0`);
-                    break;
+               
                 case 2:
                     atkleft1.setAttribute("style", `opacity: 1`);
                     atkleft2.setAttribute("style", `opacity: 1`);
-                    atkleft3.setAttribute("style", `opacity: 0`);
                     break;
                 case 1:
                     atkleft1.setAttribute("style", `opacity: 1`);
@@ -513,18 +495,10 @@ const fightApp = () => {
             }
 
             switch (def1) {
-                case 4:
-                    defleft4.setAttribute("style", `opacity: 1`);
-                    break;
-                case 3:
-                    defleft2.setAttribute("style", `opacity: 1`);
-                    defleft3.setAttribute("style", `opacity: 1`);
-                    defleft4.setAttribute("style", `opacity: 0`);
-                    break;
+               
                 case 2:
                     defleft1.setAttribute("style", `opacity: 1`);
                     defleft2.setAttribute("style", `opacity: 1`);
-                    defleft3.setAttribute("style", `opacity: 0`);
                     break;
                 case 1:
                     defleft1.setAttribute("style", `opacity: 1`);
@@ -536,18 +510,10 @@ const fightApp = () => {
             }
 
             switch (cur1) {
-                case 4:
-                    curleft4.setAttribute("style", `opacity: 1`);
-                    break;
-                case 3:
-                    curleft2.setAttribute("style", `opacity: 1`);
-                    curleft3.setAttribute("style", `opacity: 1`);
-                    curleft4.setAttribute("style", `opacity: 0`);
-                    break;
+               
                 case 2:
                     curleft1.setAttribute("style", `opacity: 1`);
                     curleft2.setAttribute("style", `opacity: 1`);
-                    curleft3.setAttribute("style", `opacity: 0`);
                     break;
                 case 1:
                     curleft1.setAttribute("style", `opacity: 1`);
@@ -559,18 +525,10 @@ const fightApp = () => {
             }
 
             switch (atk2) {
-                case 4:
-                    atkright4.setAttribute("style", `opacity: 1`);
-                    break;
-                case 3:
-                    atkright2.setAttribute("style", `opacity: 1`);
-                    atkright3.setAttribute("style", `opacity: 1`);
-                    atkright4.setAttribute("style", `opacity: 0`);
-                    break;
+                
                 case 2:
                     atkright1.setAttribute("style", `opacity: 1`);
                     atkright2.setAttribute("style", `opacity: 1`);
-                    atkright3.setAttribute("style", `opacity: 0`);
                     break;
                 case 1:
                     atkright1.setAttribute("style", `opacity: 1`);
@@ -582,18 +540,10 @@ const fightApp = () => {
             }
 
             switch (def2) {
-                case 4:
-                    defright4.setAttribute("style", `opacity: 1`);
-                    break;
-                case 3:
-                    defright2.setAttribute("style", `opacity: 1`);
-                    defright3.setAttribute("style", `opacity: 1`);
-                    defright4.setAttribute("style", `opacity: 0`);
-                    break;
+                
                 case 2:
                     defright1.setAttribute("style", `opacity: 1`);
                     defright2.setAttribute("style", `opacity: 1`);
-                    defright3.setAttribute("style", `opacity: 0`);
                     break;
                 case 1:
                     defright1.setAttribute("style", `opacity: 1`);
@@ -605,18 +555,10 @@ const fightApp = () => {
             }
 
             switch (cur2) {
-                case 4:
-                    curright4.setAttribute("style", `opacity: 1`);
-                    break;
-                case 3:
-                    curright2.setAttribute("style", `opacity: 1`);
-                    curright3.setAttribute("style", `opacity: 1`);
-                    curright4.setAttribute("style", `opacity: 0`);
-                    break;
+                
                 case 2:
                     curright1.setAttribute("style", `opacity: 1`);
                     curright2.setAttribute("style", `opacity: 1`);
-                    curright3.setAttribute("style", `opacity: 0`);
                     break;
                 case 1:
                     curright1.setAttribute("style", `opacity: 1`);
@@ -627,7 +569,11 @@ const fightApp = () => {
                     break;
             }
 
-            if (hp2 === 0){
+            if(hp1 === 0){
+                setTimeout(restartLevel, 3000);
+            }else if(hp2 === 0 && lvl==12){
+                    setTimeout(end, 3000);
+            }else if(hp2 === 0){
                 setTimeout(nextLevel, 3000);
             }
         }
@@ -678,6 +624,25 @@ const fightApp = () => {
             location.hash = `/tower/${lvl+1}`
         }, 4000);
     }
+
+    function restartLevel(){
+        pptLeft.setAttribute("style","display: none");
+        pptRight.setAttribute("style","display: none");
+        restart.setAttribute("style", `display: block`);
+    }
+    function restartLvl(){
+        location.hash = `/tower/${lvl}`
+    }
+
+    function end(){
+        pptLeft.setAttribute("style","display: none");
+        pptRight.setAttribute("style","display: none");
+        youWin.setAttribute("style", `display: block`);
+        setTimeout(() => {
+            location.hash = `/end`
+        }, 4000);
+    }
+
     }
 
 }
