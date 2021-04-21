@@ -11,3 +11,6 @@ window.addEventListener('load', changeTower);
 window.addEventListener('hashchange', fightApp);
 window.addEventListener('load', fightApp);
 
+
+
+

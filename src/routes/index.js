@@ -6,8 +6,7 @@ import Tower from '../pages/Tower';
 import Fight from '../pages/Fight';
 import Error404 from '../pages/Error404';
 import End from '../pages/End';
-
-
+import About from '../pages/About';
 
 const routes = {
   '/': Intro,
@@ -40,7 +39,8 @@ const routes = {
   '/fight/10': Fight,
   '/fight/11': Fight,
   '/fight/12': Fight,
-  '/end': End
+  '/end': End,
+  '/about': About,
 };
 
 const router = async () => {

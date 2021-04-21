@@ -35,5 +35,11 @@ module.exports = {  //Aquí se encuentra toda la configuración de lo que va a s
             to: '' }],
           })
 
-    ]
+    ],
+
+    devServer: {
+        host: '192.168.0.10',
+        port: 8080,
+        disableHostCheck: true
+    }
 }

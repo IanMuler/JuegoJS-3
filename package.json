@@ -5,8 +5,8 @@
   "description": "Harry Potter game",
   "main": "index.js",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build", 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist", 
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
