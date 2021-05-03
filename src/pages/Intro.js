@@ -92,7 +92,6 @@ const Intro = () => {
             "https://i.ibb.co/nrvMdS8/Tom-Riddle.png",
             "https://i.ibb.co/Jx6YKTd/Petegrew.png",
             "https://i.ibb.co/F8QBVLm/Dementor.png",
-            // "https://i.ibb.co/ZfYWVrg/Dragon1.png",
             "https://i.ibb.co/r41KHLr/Dragon2.png",
             "https://i.ibb.co/svjwfkF/Voldemort.png",
             "https://i.ibb.co/JCcLLK8/Umbridge.png",
