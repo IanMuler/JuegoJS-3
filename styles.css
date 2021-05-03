@@ -1562,13 +1562,20 @@ to {
   height: 453px;
   animation-duration: 1s;
   animation-name: fade;
-  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-png{
   animation-name: zoomInDown;
   animation-duration: 2s;
-  position: absolute;
-  bottom: 70px;
-  left: 60px;
+  width: 100px;
+}
+
+.about a{
+  animation-name: zoomInDown;
+  animation-duration: 2s;
+margin-left: 30px;
+text-decoration: none;
+color: rgb(40, 40, 40)
 }
